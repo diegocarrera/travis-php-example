@@ -6,11 +6,6 @@ env:
 - BD=pgsql
 
 
-#before_install: 
-#  - sudo apt-get update -q
-#  - sudo apt-get install ruby-full -y
-#  - gem install sass
-
 
 install: ./install-dependencies.sh
 
@@ -18,15 +13,6 @@ install: ./install-dependencies.sh
 script: 
   - phpunit Test.php
 
-after_success: true
-
-before_deploy: true
-
-deploy: true
-
-after_deploy: true
-
-after_script: true
 
 notifications:
   irc: "irc.freenode.org#yourfavouriteroomfortravis"
