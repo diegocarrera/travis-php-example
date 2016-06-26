@@ -5,13 +5,16 @@ php:
 env:
 - BD=pgsql
 
-
+before_install:
+- sudo apt-get update -q
+- sudo apt-get install ruby-full -y
+- gem install sass
 
 install: ./install-dependencies.sh
 
 
 script: 
-  - phpunit Test.php
+- phpunit Test.php
 
 
 notifications:
