@@ -19,4 +19,6 @@ script:
 
 
 notifications:
+  email:
+    - diegocarrera2000@gmail.com
   irc: "irc.freenode.org#yourfavouriteroomfortravis"
