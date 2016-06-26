@@ -5,9 +5,12 @@ env:
 - DB=mysql
 - BD=pgsql
 
-apt addons: true
 
-before_install: true
+before_install: 
+  - sudo apt-get update -q
+  - sudo apt-get install ruby-full -y
+  - gem install sass
+
 
 install: ./install-dependencies.sh
 
