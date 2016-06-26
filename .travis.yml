@@ -1,6 +1,30 @@
 language: php
 php:
 - 5.5
-- 5.4
-- hhvm
-script: phpunit Test.php
+env:
+- DB=mysql
+- BD=pgsql
+
+apt addons: true
+
+before_install: true
+
+install: ./install-dependencies.sh
+
+before_script: true
+
+script: 
+  - phpunit Test.php
+
+after_success: true
+
+before_deploy: true
+
+deploy: true
+
+after_deploy: true
+
+after_script: true
+
+notifications:
+  irc: "irc.freenode.org#yourfavouriteroomfortravis"
