@@ -11,7 +11,7 @@ before_install: true
 
 install: ./install-dependencies.sh
 
-before_script: true
+#before_script: true
 
 script: 
   - phpunit Test.php
