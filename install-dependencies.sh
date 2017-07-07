@@ -2,7 +2,7 @@
 
 echo "installing dependencies ..."
 
-#install:
-#  - apt-get install ruby-full
+install:
+  - apt-get install php7.0
 #  - gem install sass
 
