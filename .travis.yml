@@ -1,4 +1,7 @@
 language: php
+
+dist: xenial
+
 php:
 - 7.0
 
@@ -7,8 +10,6 @@ env:
 
 before_install:
 - sudo apt-get update -q
-- sudo apt-get install ruby-full -y
-- gem install sass
 
 install: ./install-dependencies.sh
 
