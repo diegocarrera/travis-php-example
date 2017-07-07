@@ -14,12 +14,15 @@ class Test extends PHPUnit_Framework_TestCase
         include 'not_existing_file.php';
     }
 
-  public function testTitle()
-    {
-        $this->open("/index.htm");
-        $title = $this->getTitle();
-        $this->assertEquals('Home', $title);
-    }
+/*
+#  public function testTitle()
+#    {
+#        $this->open("/index.htm");
+#        $title = $this->getTitle();
+#        $this->assertEquals('Home', $title);
+#    }
+*/
+
 }
 ?>
 
