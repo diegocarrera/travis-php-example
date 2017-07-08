@@ -1,9 +1,6 @@
 <?php
 
-class Test extends PHPUnit_Framework_WebTest
-{
-
-
+class Test extends PHPUnit_Framework_TestCase  {
   private $API = "https://helloacm.com/api/can-visit/";
 
   public function URLProvider() {
