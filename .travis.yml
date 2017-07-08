@@ -8,16 +8,10 @@ php:
 env:
 - BD=pgsql
 
-before_install:
-- sudo apt-get update -q
-
-install: ./install-dependencies.sh
-
-before_script: true
 
 script: 
 - phpunit Test.php
-
+- phpunit WebTest.php
 
 notifications:
   email:
