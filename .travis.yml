@@ -13,7 +13,7 @@ before_script: true
 
 script: 
 - phpunit Test.php
-- phpunit WebTest.php
+- phpunit bookTest.php
 
 notifications:
   email:
