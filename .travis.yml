@@ -1,13 +1,11 @@
 language: php
-
 dist: xenial
-
 php:
 - 7.0
-
 env:
 - BD=pgsql
-
+before_install:
+- sudo apt-get update -q
 
 script: 
 - phpunit Test.php
