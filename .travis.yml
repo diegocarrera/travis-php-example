@@ -8,7 +8,6 @@ env:
 before_install:
 - sudo apt-get update -q
 - sudo apt-get install phpunit -y
-- phpunit --version
 
 before_script: true
 
