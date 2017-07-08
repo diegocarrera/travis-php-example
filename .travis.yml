@@ -4,8 +4,12 @@ php:
 - 7.0
 env:
 - BD=pgsql
+
 before_install:
 - sudo apt-get update -q
+- sudo apt-get install phpunit
+
+before_script: true
 
 script: 
 - phpunit Test.php
