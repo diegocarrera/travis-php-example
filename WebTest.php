@@ -28,15 +28,6 @@ class Test extends PHPUnit_Framework_TestCase  {
     $this->assertEquals(200, $result['code']);
   }
 
-  /**
-   * @dataProvider URLProvider
-   */
-  public function test_url_via_curl($url) {
-    $data = shell_exec("curl -X POST $this->API -d \"url=$url\"");
-    $result = json_decode($data, true);
-    $this->true, $result['result']);
-    $this->assertEquals(200, $result['code']);
-  }
 
 /*
   public function testTitle()
