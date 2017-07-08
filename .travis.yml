@@ -11,7 +11,7 @@ env:
 
 script: 
 - phpunit Test.php
-- phpunit WebTest.php
+- phpunit Test2.php
 
 notifications:
   email:
