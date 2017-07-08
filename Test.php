@@ -2,11 +2,11 @@
 //require_once 'PHPUnit/Autoload.php';
 //require_once('PHPUnit/Framework/TestCase.php');
 
-class Test extends PHPUnit_Framework_TestCase
-{
+class Test extends PHPUnit_Framework_TestCase{
+
   public function testOnePlusOne() {
     $this->assertEquals(1+1,2);
-    }
+ }
 
   /**
   * @expectedException PHPUnit_Framework_Error
@@ -29,4 +29,3 @@ class Test extends PHPUnit_Framework_TestCase
 
 }
 ?>
-
