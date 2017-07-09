@@ -57,6 +57,18 @@ class WebTest extends PHPUnit_Framework_TestCase  {
     $serverName = 'www.google.com';
     $this->assertTrue($connObj->connectToServer($serverName) !== false);
   }
+
+ public function testSluggifyReturnsSluggifiedString()  {
+    $originalString = 'This string will be sluggified';
+    $expectedResult = 'this-string-will-be-sluggified';
+
+    $url = new URL();
+
+    $result = $url->sluggify($originalString);
+
+    $this->assertEquals($expectedResult, $result);
+  }
+
   /*
   public function testTitle()
     {
