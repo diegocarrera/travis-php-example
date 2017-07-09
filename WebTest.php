@@ -1,6 +1,7 @@
 <?php
 
 require_once('RemoteConnect.php');
+require_once('URL.php');
 
 class WebTest extends PHPUnit_Framework_TestCase  {
 
