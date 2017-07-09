@@ -33,7 +33,7 @@ class WebTest extends PHPUnit_Framework_TestCase  {
   }
 
 
-  public function test_url($url) {
+  public function test_url_extend($url) {
     $data = file_get_contents("index.htm");
 
     /*
