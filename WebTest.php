@@ -1,6 +1,10 @@
 <?php
 
-class Test extends PHPUnit_Framework_TestCase  {
+class WebTest extends PHPUnit_Framework_TestCase  {
+
+  public function setUp(){ }
+  public function tearDown(){ }
+
   private $API = "https://helloacm.com/api/can-visit/";
 
   public function URLProvider() {
@@ -29,7 +33,29 @@ class Test extends PHPUnit_Framework_TestCase  {
   }
 
 
-/*
+  public function test_url($url) {
+    $data = file_get_contents("index.htm");
+
+    /*
+    $this->assertEquals(true, $result['result']);
+
+    //https://www.w3.org/Protocols/HTTP/HTRESP.html
+    //OK 200, The request was fulfilled.
+    $this->assertEquals(200, $result['code']);
+
+    */
+  }
+
+
+
+  public function testConnectionIsValid()
+  {
+    // test to ensure that the object from an fsockopen is valid
+    $connObj = new RemoteConnect();
+    $serverName = 'www.google.com';
+    $this->assertTrue($connObj->connectToServer($serverName) !== false);
+  }
+  /*
   public function testTitle()
     {
         $this->open("/index.htm");
