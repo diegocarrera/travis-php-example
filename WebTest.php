@@ -70,14 +70,13 @@ class WebTest extends PHPUnit_Framework_TestCase  {
     $this->assertEquals($expectedResult, $result);
   }
 
-  /*
+
   public function testTitle()
     {
-        $this->open("/index.htm");
-        $title = $this->getTitle();
+        $title=$this->page_title("/index.htm");
         $this->assertEquals('Home', $title);
     }
-*/
+
 
 }
 ?>
