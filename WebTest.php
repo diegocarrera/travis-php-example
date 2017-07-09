@@ -58,6 +58,7 @@ class WebTest extends PHPUnit_Framework_TestCase  {
     $this->assertTrue($connObj->connectToServer($serverName) !== false);
   }
 
+  //https://jtreminio.com/2013/03/unit-testing-tutorial-part-2-assertions-writing-a-useful-test-and-dataprovider/
   public function testSluggifyReturnsSluggifiedString()  {
     $originalString = 'This string will be sluggified';
     $expectedResult = 'this-string-will-be-sluggified';
