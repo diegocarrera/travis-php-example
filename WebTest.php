@@ -75,7 +75,7 @@ class WebTest extends PHPUnit_Framework_TestCase  {
     {
         $connObj = new RemoteConnect();
         $title=$connObj->page_title("index.htm");
-        $this->assertEquals('Home', $title);
+        $this->assertEquals('Home false', $title);
     }
 
 
