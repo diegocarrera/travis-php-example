@@ -51,15 +51,14 @@ class WebTest extends PHPUnit_Framework_TestCase  {
 
 
 
-  public function testConnectionIsValid()
-  {
+  public function testConnectionIsValid(){
     // test to ensure that the object from an fsockopen is valid
     $connObj = new RemoteConnect();
     $serverName = 'www.google.com';
     $this->assertTrue($connObj->connectToServer($serverName) !== false);
   }
 
- public function testSluggifyReturnsSluggifiedString()  {
+  public function testSluggifyReturnsSluggifiedString()  {
     $originalString = 'This string will be sluggified';
     $expectedResult = 'this-string-will-be-sluggified';
 
@@ -71,12 +70,12 @@ class WebTest extends PHPUnit_Framework_TestCase  {
   }
 
 
-  public function testTitle()
-    {
-        $connObj = new RemoteConnect();
-        $title=$connObj->page_title("index.htm");
-        $this->assertEquals('Home false', $title);
-    }
+  public function testTitle(){
+    $connObj = new RemoteConnect();
+    $title=$connObj->page_title("index.htm");
+    $this->assertEquals('Home false', $title);
+    $this->assertEquals('Home', $title);
+  }
 
 
 }
